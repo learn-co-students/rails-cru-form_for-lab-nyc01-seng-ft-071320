@@ -1,0 +1,5 @@
+<h1> Artist name: <%= @artist.name %> </h1>
+<p> Artist bio: <br><%= @artist.bio %> </p>
+<h6><%= button_to "Edit", edit_artist_path, method: :get%></h6>
+
+<%= button_to "Home Menu", {:action => 'index'}, :method => :get %>

@@ -1,0 +1,7 @@
+<h3> All the genres </h3>
+
+<%= button_to "New Genre", new_genre_path, method: :get %>
+
+<% @genres.each do |genre| %>
+    <p><%= link_to genre.name, genre_path(genre) %></p>
+<%end%>
