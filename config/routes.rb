@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  get '/home', to: 'home#index'
   resources :artists
   resources :songs
   resources :genres
