@@ -1,0 +1,7 @@
+<h1> <%= @song.name %> </h1>
+
+<% artist = Artist.find(@song.artist_id) %>
+<p>Artist: <%= link_to artist.name, artist_path(@song.artist) %> </p>
+<br>
+<% genre = Genre.find(@song.genre_id) %>
+<p> Genre: <%= link_to genre.name, genre_path(@song.genre) %> </p>
