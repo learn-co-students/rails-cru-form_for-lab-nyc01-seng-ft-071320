@@ -11,40 +11,40 @@
 
 You've been tasked with building a Rails app called **Beats by Rails**, the app will need to have three separate models:
 
-* Songs
+<!-- * Songs
 
 * Artists
 
-* Genres
+* Genres -->
 
 The data relationship will look something like this:
 
-* A song belongs to an artist
+<!-- * A song belongs to an artist
 
-* A song belongs to a genre
+* A song belongs to a genre -->
 
-* A genre has many songs
+<!-- * A genre has many songs -->
 
-* An artist has many songs
+<!-- * An artist has many songs -->
 
 
 The tests are in the `spec/features` directory for each model. You will need to build in the ability to `create`, `update`, and `show` for each model. And for the song `show` page you need to have it display each of the song's genre and artist, and link to the respective genre and artist `show` pages.
 
 The database tables should look like this (note each column type):
 
-```db
+<!-- ```db
 table "artists"
   string   "name"
   text     "bio"
 
 table "genres"
-  string   "name"
+  string   "name" -->
 
-table "songs"
+<!-- table "songs"
   string   "name"
   integer  "artist_id"
   integer  "genre_id"
-```
+``` -->
 
 ## Key notes to remember
 
