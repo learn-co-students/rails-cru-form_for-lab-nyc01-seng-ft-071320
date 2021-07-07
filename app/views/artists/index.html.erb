@@ -1,0 +1,6 @@
+<h1> We have <%= @artists.count %> artists</h1>
+<%= button_to "New Artists", new_artist_path, method: :get %>
+
+<% @artists.each do |artist| %>
+    <p><%= link_to artist.name, artist_path(artist) %></p>
+<%end%>

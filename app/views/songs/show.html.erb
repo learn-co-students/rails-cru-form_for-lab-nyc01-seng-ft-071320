@@ -1,0 +1,6 @@
+<h1> Song name: <%= @song.name %></h3>
+<h3> Artist name: <%= link_to @song.artist[:name], artist_path(@song.artist.id) %></h3>
+<h3> Genre name: <%= link_to @song.genre[:name], genre_path(@song.genre.id) %></h3>
+<h6><%= button_to "Edit", edit_song_path, method: :get%></h6>
+
+<%= button_to "Home Page", songs_path, method: :get %>
